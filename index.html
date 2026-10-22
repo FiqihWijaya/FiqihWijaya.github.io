@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--
+  =====================================================================
+  JASA VAROKAH - index.html
+  Berisi STRUKTUR & ISI halaman. Tampilan ada di style.css,
+  fungsi (carousel, form WhatsApp, musik) ada di script.js.
+
+  CARA MENGGANTI DATA PENTING:
+  1. Nomor WhatsApp, email, dan link sosmed  -> script.js (bagian CONFIG)
+     dan bagian "sameAs" JSON-LD di bawah ini.
+  2. Domain (https://www.jasavarokah.com)   -> ganti di <link canonical>,
+     og:url, og:image, JSON-LD, robots.txt dan sitemap.xml.
+  3. Nama Anda -> cari tulisan [Nama Anda] di bagian "Tentang Saya".
+  =====================================================================
+-->
+<html lang="id">
+<head>
+  <!-- Pengaturan dasar: encoding & tampilan responsif di HP -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ================= SEO (agar muncul di Google) ================= -->
+  <!-- Judul tab & judul di hasil pencarian Google (ideal 50-60 karakter) -->
+  <title>Jasa Varokah | Jasa Website Sederhana, Ojek, Antar Barang &amp; Supir</title>
+  <!-- Deskripsi di bawah judul hasil pencarian (ideal 120-160 karakter) -->
+  <meta name="description" content="Jasa Varokah melayani pembuatan website sederhana, ojek antar jemput, antar barang, supir + mobil, bersih-bersih rumah, dan rapikan taman. Hubungi via WhatsApp.">
+  <meta name="keywords" content="jasa pembuatan website sederhana, jasa serabutan, ojek antar jemput, jasa antar barang, sewa supir dan mobil, jasa bersih-bersih rumah, jasa rapikan taman">
+  <meta name="author" content="Jasa Varokah">
+  <!-- Mengizinkan Google menampilkan & menelusuri halaman ini -->
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <!-- Alamat utama halaman (GANTI dengan domain Anda) -->
+  <link rel="canonical" href="https://www.jasavarokah.com/">
+  <!-- Warna bilah browser di HP -->
+  <meta name="theme-color" content="#f7b500">
+
+  <!-- Pratinjau saat link dibagikan di WhatsApp / Facebook (Open Graph) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="Jasa Varokah">
+  <meta property="og:title" content="Jasa Varokah | Website Sederhana &amp; Jasa Serabutan">
+  <meta property="og:description" content="Pembuatan website sederhana, ojek, antar barang, supir + mobil, bersih-bersih rumah, dan rapikan taman.">
+  <meta property="og:url" content="https://www.jasavarokah.com/">
+  <meta property="og:image" content="https://www.jasavarokah.com/assets/og-image.jpg">
+  <!-- Pratinjau saat dibagikan di X/Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jasa Varokah | Website Sederhana &amp; Jasa Serabutan">
+  <meta name="twitter:description" content="Pembuatan website sederhana dan berbagai jasa harian yang cepat dan terpercaya.">
+  <meta name="twitter:image" content="https://www.jasavarokah.com/assets/og-image.jpg">
+
+  <!-- Ikon tab browser -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Data terstruktur (JSON-LD) agar Google paham bahwa ini bisnis jasa -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Jasa Varokah",
+    "url": "https://www.jasavarokah.com/",
+    "image": "https://www.jasavarokah.com/assets/og-image.jpg",
+    "description": "Jasa pembuatan website sederhana, ojek antar jemput, antar barang, supir + mobil, bersih-bersih rumah, dan rapikan taman.",
+    "telephone": "+6281234567890",
+    "areaServed": "Indonesia",
+    "priceRange": "$",
+    "sameAs": [
+      "https://www.instagram.com/USERNAME_ANDA",
+      "https://www.facebook.com/USERNAME_ANDA",
+      "https://www.linkedin.com/in/USERNAME_ANDA",
+      "https://github.com/USERNAME_ANDA",
+      "https://www.threads.net/@USERNAME_ANDA"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Layanan Jasa Varokah",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pembuatan Website Sederhana" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ojek Antar Jemput" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jasa Antar Barang" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Supir + Mobil" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bersih-bersih Rumah" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rapikan Halaman dan Taman" } }
+      ]
+    }
+  }
+  </script>
+
+  <!-- File tampilan -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ======================= HEADER / MENU ======================= -->
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="#beranda" aria-label="Jasa Varokah - ke atas">Jasa <span>Varokah</span></a>
+    <nav aria-label="Menu utama">
+      <a href="#layanan">Layanan</a>
+      <a href="#website">Website</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#tentang">Tentang</a>
+      <a class="btn small" href="#kontak">Pesan</a>
+    </nav>
+  </div>
+</header>
+
+<main id="beranda">
+
+  <!-- ======================= HERO (bagian atas) ======================= -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <!-- H1: judul utama, hanya satu per halaman (penting untuk SEO) -->
+        <h1>Jasa Website Sederhana &amp; <em>Jasa Serabutan</em> yang Cepat dan Terpercaya</h1>
+        <p>Butuh website untuk usaha Anda? Atau butuh ojek, antar barang, supir, bersih-bersih rumah, dan rapikan taman? Cukup satu kontak, semua beres.</p>
+        <div class="cta">
+          <!-- data-wa: link ini otomatis memakai nomor di script.js -->
+          <a class="btn" data-wa href="https://wa.me/6281234567890" target="_blank" rel="noopener">Chat WhatsApp</a>
+          <a class="btn ghost" href="#layanan">Lihat layanan</a>
+        </div>
+      </div>
+      <img class="photo" src="assets/foto-varokah.jpg" width="600" height="600"
+           alt="Pemilik Jasa Varokah, penyedia jasa website dan jasa serabutan" fetchpriority="high">
+    </div>
+  </section>
+
+  <!-- ======================= LAYANAN (carousel) ======================= -->
+  <section id="layanan" aria-labelledby="judul-layanan">
+    <div class="wrap">
+      <h2 id="judul-layanan">Layanan Kami</h2>
+      <p class="sub">Geser atau tekan panah untuk melihat semua layanan.</p>
+
+      <!-- data-carousel: diaktifkan oleh script.js -->
+      <div class="carousel" data-carousel>
+        <button class="car-btn prev" type="button" aria-label="Layanan sebelumnya">&#8249;</button>
+        <div class="track" tabindex="0" aria-label="Daftar layanan">
+          <article class="card slide"><div class="ic" aria-hidden="true">💻</div><h3>Website Sederhana</h3><p>Landing page, profil usaha, atau portfolio yang rapi, cepat, dan nyaman dibuka di HP.</p><span class="tag">Digital</span></article>
+          <article class="card slide"><div class="ic" aria-hidden="true">🏍️</div><h3>Ojek Antar Jemput</h3><p>Antar jemput sekolah, kerja, pasar, atau stasiun. Tepat waktu dan sopan.</p><span class="tag">Transportasi</span></article>
+          <article class="card slide"><div class="ic" aria-hidden="true">📦</div><h3>Antar Barang</h3><p>Kirim paket, belanjaan, makanan, atau dokumen dalam kota dengan cepat.</p><span class="tag">Kurir</span></article>
+          <article class="card slide"><div class="ic" aria-hidden="true">🚗</div><h3>Supir + Mobil</h3><p>Sewa mobil lengkap dengan supir untuk keperluan keluarga, acara, atau perjalanan luar kota.</p><span class="tag">Transportasi</span></article>
+          <article class="card slide"><div class="ic" aria-hidden="true">🧹</div><h3>Bersih-bersih Rumah</h3><p>Sapu, pel, kamar mandi, dapur, hingga rumah kosong yang perlu dirapikan.</p><span class="tag">Rumah</span></article>
+          <article class="card slide"><div class="ic" aria-hidden="true">🌿</div><h3>Halaman &amp; Taman</h3><p>Potong rumput, bersihkan halaman belakang, rapikan tanaman, dan buang sampah daun.</p><span class="tag">Rumah</span></article>
+        </div>
+        <button class="car-btn next" type="button" aria-label="Layanan berikutnya">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= PAKET WEBSITE ======================= -->
+  <section id="website" aria-labelledby="judul-website">
+    <div class="wrap">
+      <h2 id="judul-website">Paket Pembuatan Website Sederhana</h2>
+      <p class="sub">Cocok untuk warung, jasa, UMKM, atau portfolio pribadi. (Harga contoh, silakan sesuaikan.)</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Satu Halaman</h3>
+          <div class="price">Rp 500.000 <small>mulai dari</small></div>
+          <ul><li>1 halaman landing page</li><li>Tampil rapi di HP</li><li>Tombol WhatsApp</li><li>Revisi 2x</li></ul>
+        </div>
+        <div class="card pop">
+          <h3>Profil Usaha</h3>
+          <div class="price">Rp 900.000 <small>mulai dari</small></div>
+          <ul><li>Sampai 4 bagian/halaman</li><li>Galeri produk/layanan</li><li>SEO dasar agar muncul di Google</li><li>Bantu pasang di hosting</li><li>Revisi 3x</li></ul>
+        </div>
+        <div class="card">
+          <h3>Portfolio Pribadi</h3>
+          <div class="price">Rp 700.000 <small>mulai dari</small></div>
+          <ul><li>Profil dan karya Anda</li><li>Form kontak/WhatsApp</li><li>Desain terang &amp; gelap</li><li>Revisi 2x</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CARA PESAN ======================= -->
+  <section id="cara" aria-labelledby="judul-cara">
+    <div class="wrap">
+      <h2 id="judul-cara">Cara Pesan</h2>
+      <p class="sub">Mudah, tanpa ribet.</p>
+      <ol class="steps">
+        <li class="step"><h3>Isi form</h3><p>Ceritakan kebutuhan Anda lewat form di bawah atau chat langsung.</p></li>
+        <li class="step"><h3>Sepakati harga</h3><p>Kami beri estimasi biaya dan waktu yang jelas.</p></li>
+        <li class="step"><h3>Kami kerjakan</h3><p>Layanan dikerjakan sesuai jadwal yang disepakati.</p></li>
+        <li class="step"><h3>Selesai &amp; bayar</h3><p>Cek hasilnya, lalu bayar tunai atau transfer.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ======================= PORTFOLIO (carousel) ======================= -->
+  <section id="portfolio" aria-labelledby="judul-portfolio">
+    <div class="wrap">
+      <h2 id="judul-portfolio">Portfolio</h2>
+      <p class="sub">Contoh hasil kerja. Ganti dengan karya Anda sendiri.</p>
+      <div class="carousel" data-carousel>
+        <button class="car-btn prev" type="button" aria-label="Portfolio sebelumnya">&#8249;</button>
+        <div class="track" tabindex="0" aria-label="Daftar portfolio">
+          <!-- Untuk memakai gambar asli: ganti <div class="work"> dengan <img class="work" src="assets/nama-gambar.jpg" alt="deskripsi"> -->
+          <article class="card slide"><div class="work">Website Warung</div><h3>Landing page kuliner</h3><p>Menu, lokasi, dan tombol pesan via WhatsApp.</p></article>
+          <article class="card slide"><div class="work">Profil Jasa</div><h3>Website jasa harian</h3><p>Daftar layanan dan kontak yang mudah ditemukan.</p></article>
+          <article class="card slide"><div class="work">Portfolio</div><h3>Portfolio pribadi</h3><p>Halaman karya untuk freelancer.</p></article>
+          <article class="card slide"><div class="work">Toko Online</div><h3>Katalog produk sederhana</h3><p>Daftar produk dengan tombol pesan langsung.</p></article>
+        </div>
+        <button class="car-btn next" type="button" aria-label="Portfolio berikutnya">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= TENTANG SAYA ======================= -->
+  <section id="tentang" aria-labelledby="judul-tentang">
+    <div class="wrap about">
+      <img class="photo" src="assets/foto-varokah.jpg" width="600" height="600" loading="lazy"
+           alt="Foto pemilik Jasa Varokah">
+      <div>
+        <h2 id="judul-tentang">Tentang Saya</h2>
+        <p>Halo, saya [Nama Anda]. Saya melayani pembuatan website sederhana serta berbagai jasa harian seperti antar jemput, antar barang, supir, dan bersih-bersih rumah.</p>
+        <p>Prinsip saya: kerja rapi, tepat waktu, dan harga jelas sejak awal. Silakan hubungi saya kapan saja untuk berdiskusi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= KONTAK: FORM + SOSMED ======================= -->
+  <section id="kontak" aria-labelledby="judul-kontak">
+    <div class="wrap">
+      <h2 id="judul-kontak">Kirim Permintaan</h2>
+      <p class="sub">Isi form, lalu Anda akan diarahkan ke WhatsApp dengan pesan yang sudah terisi otomatis.</p>
+
+      <div class="contact-grid">
+        <!-- Form: dikirim ke WhatsApp oleh script.js (tidak memakai server) -->
+        <form id="formPermintaan" class="card form" novalidate>
+          <label for="nama">Nama</label>
+          <input id="nama" name="nama" type="text" placeholder="Nama Anda" autocomplete="name" required>
+
+          <label for="layananPilih">Layanan</label>
+          <select id="layananPilih" name="layanan" required>
+            <option value="">-- Pilih layanan --</option>
+            <option>Website Sederhana</option>
+            <option>Ojek Antar Jemput</option>
+            <option>Antar Barang</option>
+            <option>Supir + Mobil</option>
+            <option>Bersih-bersih Rumah</option>
+            <option>Halaman &amp; Taman</option>
+            <option>Lainnya</option>
+          </select>
+
+          <label for="waktu">Tanggal / Waktu (opsional)</label>
+          <input id="waktu" name="waktu" type="text" placeholder="Contoh: Sabtu, 09.00">
+
+          <label for="lokasi">Lokasi / Alamat</label>
+          <input id="lokasi" name="lokasi" type="text" placeholder="Alamat atau titik jemput/antar" required>
+
+          <label for="catatan">Catatan</label>
+          <textarea id="catatan" name="catatan" rows="4" placeholder="Jelaskan kebutuhan Anda"></textarea>
+
+          <button class="btn" type="submit">Kirim via WhatsApp</button>
+        </form>
+
+        <!-- Tombol sosial media: link diatur di script.js (CONFIG.social) -->
+        <div class="card social-box">
+          <h3>Ikuti &amp; Hubungi Saya</h3>
+          <p>Temukan saya di sosial media atau kirim email.</p>
+          <div class="social">
+            <a data-social="instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg><span>Instagram</span></a>
+            <a data-social="facebook" href="#" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><span>Facebook</span></a>
+            <a data-social="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg><span>LinkedIn</span></a>
+            <a data-social="github" href="#" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg><span>GitHub</span></a>
+            <a data-social="email" href="#" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>Email</span></a>
+            <a data-social="threads" href="#" target="_blank" rel="noopener" aria-label="Threads">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M15.2 12v1.3a2.2 2.2 0 0 0 4.4 0V12a7.6 7.6 0 1 0-3 6"/></svg><span>Threads</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="site-footer">
+  <div class="wrap">© <span id="tahun">2026</span> Jasa Varokah. Jasa website sederhana &amp; jasa serabutan.</div>
+</footer>
+
+<!-- ======================= MUSIK LATAR =======================
+  Tombol musik di pojok kanan bawah. Browser tidak mengizinkan musik
+  otomatis berbunyi, jadi pengunjung harus menekan tombol ini.
+  Untuk memakai lagu Anda sendiri: taruh file MP3 bernama
+  assets/musik-latar.mp3 (pakai lagu bebas hak cipta/berlisensi).
+  Jika file tidak ada, script.js memutar melodi lembut buatan sendiri. -->
+<audio id="bgm" src="assets/musik-latar.mp3" loop preload="none"></audio>
+<button id="musicBtn" class="music-btn" type="button" aria-pressed="false" aria-label="Putar musik latar">
+  <span class="music-ic" aria-hidden="true">🎵</span><span class="music-txt">Musik</span>
+</button>
+
+<!-- File fungsi (dimuat terakhir agar halaman tampil lebih cepat) -->
+<script src="script.js" defer></script>
+</body>
+</html>
