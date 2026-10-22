@@ -17,10 +17,10 @@
 const CONFIG = {
   // Nomor WhatsApp: format internasional, tanpa +, spasi, atau 0 di depan.
   // Contoh nomor 0812-3456-7890 -> "6281234567890"
-  waNumber: '6281234567890',
+  waNumber: '6289654082548',
 
   // Email yang tampil pada tombol "Email"
-  email: 'emailanda@gmail.com',
+  email: 'fiqihwijaya86@gmail.com',
 
   // Link sosial media. Ganti USERNAME_ANDA dengan username Anda.
   social: {
