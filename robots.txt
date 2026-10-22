@@ -1,0 +1,6 @@
+# robots.txt - mengizinkan semua mesin pencari (Google, Bing, dll) menelusuri website
+User-agent: *
+Allow: /
+
+# GANTI dengan alamat domain Anda setelah domain aktif
+Sitemap: https://www.jasavarokah.com/sitemap.xml
