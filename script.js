@@ -28,7 +28,7 @@ const CONFIG = {
     facebook:  'https://www.facebook.com/share/1Gg8n21Rud/',
     linkedin:  'https://www.linkedin.com/in/fiqih-wijaya-485947264',
     github:    'https://github.com/FiqihWijaya',
-    threads:   'https://https://www.threads.com/@fiqih.wijaya'
+    threads:   'https://www.threads.com/@fiqih.wijaya'
   }
 };
 
