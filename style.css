@@ -149,6 +149,11 @@ nav a.btn { color: var(--brand-ink); }
 
 
 /* ---------- 8. CAROUSEL (layanan & portfolio) ---------- */
+/* Tautan "Kunjungi website" di kartu portfolio */
+.visit { margin-top: 12px !important; }
+.visit a { color: var(--brand-text); font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--brand); }
+.visit a:hover { color: var(--text); }
+
 .carousel { position: relative; }
 .track {
   display: flex; gap: 16px;
