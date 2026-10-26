@@ -221,6 +221,15 @@ nav a.btn { color: var(--brand-ink); }
 
 
 /* ---------- 11. FOOTER ---------- */
+/* ---------- KOTAK METODE PEMBAYARAN ---------- */
+.side { display: grid; gap: 20px; }                  /* susun kartu sosmed dan kotak bayar ke bawah */
+.pay-box h3 { margin: 0 0 10px; }
+.pay-box img {
+  width: 100%; height: auto;
+  background: #fff;                                  /* bingkai putih agar logo terbaca di mode gelap */
+  border: 1px solid var(--line); border-radius: 14px; padding: 10px;
+}
+
 .site-footer { padding: 28px 0 90px; color: var(--muted); font-size: .9rem; text-align: center; border-top: 1px solid var(--line); }
 
 
