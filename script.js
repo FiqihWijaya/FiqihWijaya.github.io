@@ -24,11 +24,11 @@ const CONFIG = {
 
   // Link sosial media. Ganti USERNAME_ANDA dengan username Anda.
   social: {
-    instagram: 'https://www.instagram.com/USERNAME_ANDA',
-    facebook:  'https://www.facebook.com/USERNAME_ANDA',
-    linkedin:  'https://www.linkedin.com/in/USERNAME_ANDA',
-    github:    'https://github.com/USERNAME_ANDA',
-    threads:   'https://www.threads.net/@USERNAME_ANDA'
+    instagram: 'https://www.instagram.com/fiqih.wijaya',
+    facebook:  'https://www.facebook.com/share/1Gg8n21Rud/',
+    linkedin:  'https://www.linkedin.com/in/fiqih-wijaya-485947264',
+    github:    'https://github.com/FiqihWijaya',
+    threads:   'https://https://www.threads.com/@fiqih.wijaya'
   }
 };
 
