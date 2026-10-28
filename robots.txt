@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # GANTI dengan alamat domain Anda setelah domain aktif
-Sitemap: https://www.jasavarokah.com/sitemap.xml
+Sitemap: https://jasavarokah.my.id/sitemap.xml
