@@ -6,7 +6,6 @@
    CARA MENGGANTI WARNA: ubah nilai di bagian "1. VARIABEL WARNA".
    ===================================================================== */
 
-
 /* ---------- 1. VARIABEL WARNA (mode terang) ---------- */
 :root {
   --bg: #fffaf0;          /* latar halaman: krem hangat */
