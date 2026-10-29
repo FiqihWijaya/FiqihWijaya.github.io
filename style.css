@@ -123,12 +123,6 @@ nav a.btn { color: var(--brand-ink); }
   padding: 3px 12px; border-radius: 999px; font-weight: 600;
 }
 
-/* Paket harga */
-.price { font-size: 1.5rem; font-weight: 800; margin: 6px 0 10px; }
-.price small { font-size: .85rem; font-weight: 500; color: var(--muted); }
-.card ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: .95rem; }
-.card.pop { border: 2px solid var(--brand); box-shadow: var(--shadow); }
-
 /* ---------- PAKET HARGA (PRICING GRID) BARU ---------- */
 .pricing-grid {
   display: grid;
