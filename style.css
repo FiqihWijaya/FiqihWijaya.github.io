@@ -129,7 +129,7 @@ nav a.btn { color: var(--brand-ink); }
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   width: 100%;
-  max-width: 900px; /* Disamakan dengan max-width additional agar fit & simetris */
+  max-width: 1040px; /* Disamakan dengan max-width additional agar fit & simetris */
   margin: 0 auto 28px;
 }
 
