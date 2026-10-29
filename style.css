@@ -130,6 +130,74 @@ nav a.btn { color: var(--brand-ink); }
 .card ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: .95rem; }
 .card.pop { border: 2px solid var(--brand); box-shadow: var(--shadow); }
 
+/* Addon */
+.addon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.addon-card {
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.addon-card:hover {
+  transform: translateY(-4px);
+  border-color: #ffc107; /* Warna kuning sesuai tema web */
+}
+
+.addon-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.addon-icon {
+  font-size: 24px;
+  background: #fff8e1;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.addon-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.addon-features {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.addon-features li {
+  margin-bottom: 6px;
+}
+
+.btn-addon {
+  background: #ffc107;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
 
 /* ---------- 7. LANGKAH PEMESANAN ---------- */
 .steps {
