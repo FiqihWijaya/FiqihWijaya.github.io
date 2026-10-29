@@ -129,105 +129,94 @@ nav a.btn { color: var(--brand-ink); }
 .card ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: .95rem; }
 .card.pop { border: 2px solid var(--brand); box-shadow: var(--shadow); }
 
-/* Addon */
+/* ---------- Addon Section ---------- */
 .addon-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
+  width: 100%;
   max-width: 900px;
-  margin: 20px auto;
+  margin: 24px auto 0;
 }
 
 .addon-card {
-  background: #ffffff;
-  border: 1px solid #eee;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(168, 104, 0, .06);
   transition: transform 0.2s ease, border-color 0.2s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 12px;
 }
 
 .addon-card:hover {
   transform: translateY(-4px);
-  border-color: #ffc107; /* Warna kuning sesuai tema web */
+  border-color: var(--brand);
 }
 
 .addon-header {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
+  gap: 14px;
 }
 
 .addon-icon {
-  font-size: 24px;
-  background: #fff8e1;
-  padding: 10px;
-  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  background: var(--brand-soft);
+  color: var(--brand-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.addon-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--text);
 }
 
 .addon-price {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text);
+  display: block;
+}
+
+.addon-price small {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--muted);
 }
 
 .addon-features {
   list-style: none;
   padding: 0;
-  margin: 15px 0;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.addon-features li {
-  margin-bottom: 6px;
-}
-
-.btn-addon {
-  background: #ffc107;
-  border: none;
-  padding: 10px;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  width: 100%;
-}
-
-/* Styling Icon Utama di Header Kartu */
-.addon-icon {
-  width: 44px;
-  height: 44px;
-  background: #fff8e1;
-  color: #d97706; /* Warna oranye/kuning gelap agar kontras */
+  margin: 8px 0 0 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  font-size: 20px;
-}
-
-/* Styling Icon Centang pada List Fitur */
-.addon-features li {
-  display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 8px;
-  margin-bottom: 8px;
-  font-size: 0.9rem;
-  color: #444;
+}
+
+.addon-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  color: var(--muted);
 }
 
 .addon-features li i {
-  color: #10b981; /* Warna hijau centang (opsional: bisa ganti #ffc107 jika mau kuning) */
+  color: #10b981; /* Warna hijau centang */
   font-size: 14px;
-}
-
-/* Styling Icon pada Tombol */
-.btn-addon i {
-  margin-right: 6px;
+  flex-shrink: 0;
 }
 
 /* ---------- 7. LANGKAH PEMESANAN ---------- */
