@@ -139,13 +139,14 @@ nav a.btn { color: var(--brand-ink); }
   margin: 24px auto 0;
 }
 
+/* Memakai variabel var(--surface) agar mengikuti latar kartu lain */
 .addon-card {
-  background: var(--surface);
-  color: var(--text);
+  background: var(--surface) !important;
+  color: var(--text) !important;
   border: 1px solid var(--line);
   border-radius: 18px;
   padding: 22px;
-  box-shadow: 0 2px 8px rgba(168, 104, 0, .06);
+  box-shadow: var(--shadow);
   transition: transform 0.2s ease, border-color 0.2s ease;
   display: flex;
   flex-direction: column;
@@ -177,23 +178,23 @@ nav a.btn { color: var(--brand-ink); }
   flex-shrink: 0;
 }
 
-.addon-card h3 {
+/* Memaksa judul dan harga menggunakan warna teks variabel (--text) */
+.addon-card h3,
+.addon-price {
+  color: var(--text) !important;
   margin: 0;
-  font-size: 1.05rem;
-  color: var(--text);
 }
 
 .addon-price {
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--text);
   display: block;
 }
 
 .addon-price small {
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--muted);
+  color: var(--muted) !important;
 }
 
 .addon-features {
@@ -205,16 +206,17 @@ nav a.btn { color: var(--brand-ink); }
   gap: 8px;
 }
 
+/* Memaksa list menggunakan warna muted/terang saat mode gelap */
 .addon-features li {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 0.92rem;
-  color: var(--muted);
+  color: var(--muted) !important;
 }
 
 .addon-features li i {
-  color: #10b981; /* Warna hijau centang */
+  color: #10b981;
   font-size: 14px;
   flex-shrink: 0;
 }
