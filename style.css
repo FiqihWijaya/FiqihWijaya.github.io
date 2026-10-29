@@ -198,6 +198,38 @@ nav a.btn { color: var(--brand-ink); }
   width: 100%;
 }
 
+/* Styling Icon Utama di Header Kartu */
+.addon-icon {
+  width: 44px;
+  height: 44px;
+  background: #fff8e1;
+  color: #d97706; /* Warna oranye/kuning gelap agar kontras */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* Styling Icon Centang pada List Fitur */
+.addon-features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.addon-features li i {
+  color: #10b981; /* Warna hijau centang (opsional: bisa ganti #ffc107 jika mau kuning) */
+  font-size: 14px;
+}
+
+/* Styling Icon pada Tombol */
+.btn-addon i {
+  margin-right: 6px;
+}
 
 /* ---------- 7. LANGKAH PEMESANAN ---------- */
 .steps {
