@@ -34,7 +34,7 @@
     --brand-soft: #3a2f0e;
     --brand-text: #ffc933;
     --accent: #ff9f1c;
-    --line: #3f3414;
+    --line: #4a3e1a;
     --shadow: 0 8px 24px rgba(0, 0, 0, .4);
     color-scheme: dark;
   }
@@ -123,54 +123,34 @@ nav a.btn { color: var(--brand-ink); }
   padding: 3px 12px; border-radius: 999px; font-weight: 600;
 }
 
-/* ---------- PAKET HARGA (PRICING GRID) BARU ---------- */
+/* ---------- PAKET HARGA (PRICING GRID) ---------- */
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  margin-bottom: 32px;
+  width: 100%;
+  max-width: 900px; /* Disamakan dengan max-width additional agar fit & simetris */
+  margin: 0 auto 28px;
 }
 
 .pricing-card {
-  position: relative;
   background: var(--surface) !important;
   color: var(--text) !important;
-  border: 2px solid var(--line);
+  border: 1.5px solid var(--line) !important; /* Garis ditegaskan agar jelas di HP/Dark Mode */
   border-radius: 18px;
-  padding: 24px;
+  padding: 22px;
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all 0.25s ease-in-out;
-  cursor: pointer;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Efek Highlight saat kartu di-hover atau diklik */
+/* Efek Highlight hanya saat disentuh / kursor diarahkan (Hover) */
 .pricing-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   border-color: var(--brand) !important;
-  box-shadow: 0 12px 28px rgba(247, 181, 0, 0.25);
-}
-
-/* Tampilan khusus untuk kartu yang diberi highlight (Super Ultra) */
-.pricing-card.pop {
-  border-color: var(--brand) !important;
-  background: color-mix(in srgb, var(--brand-soft) 30%, var(--surface)) !important;
-}
-
-/* Badge Paling Laris */
-.badge-pop {
-  position: absolute;
-  top: -12px;
-  right: 20px;
-  background: var(--brand);
-  color: var(--brand-ink);
-  font-size: 0.75rem;
-  font-weight: 800;
-  padding: 4px 12px;
-  border-radius: 999px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(247, 181, 0, 0.2);
 }
 
 .pricing-header h3 {
@@ -180,14 +160,14 @@ nav a.btn { color: var(--brand-ink); }
 }
 
 .pricing-header .price {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: var(--text) !important;
   margin: 0 0 16px 0;
 }
 
 .pricing-header .price small {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 500;
   color: var(--muted) !important;
 }
@@ -196,7 +176,7 @@ nav a.btn { color: var(--brand-ink); }
 .pricing-features {
   list-style: none;
   padding: 0;
-  margin: 0 0 24px 0;
+  margin: 0 0 20px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -206,14 +186,14 @@ nav a.btn { color: var(--brand-ink); }
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   color: var(--muted) !important;
   line-height: 1.4;
 }
 
 .pricing-features li i {
   color: #10b981; /* Warna hijau centang */
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 3px;
   flex-shrink: 0;
 }
